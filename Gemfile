@@ -36,6 +36,7 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'figaro'
+
 gem "compass-rails", git: 'https://github.com/Compass/compass-rails', branch: 'master'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
