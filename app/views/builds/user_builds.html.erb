@@ -1,0 +1,23 @@
+<div class="container">
+
+	<h1>Welcome, <%= current_user.email %></h1>
+	<!-- put in a weather api here that grabs their location? -->
+	<h2>Here are your Comfort Wood Guitar(s)</h2>
+
+	<% unless @user.builds.nil? %>
+	<% @user.builds.each do |build| %>
+		<%= build.name %>
+	      <% end %>
+	<% end %>
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="polaroid">
+				<%= image_tag("walnut1.jpg", class: "featured_img") %>
+				<div class="imgcontainer">
+					<p>Figuring out the corner binding</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

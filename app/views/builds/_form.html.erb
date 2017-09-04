@@ -1,0 +1,47 @@
+<%= form_with(model: build, local: true) do |form| %>
+  <% if build.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(build.errors.count, "error") %> prohibited this build from being saved:</h2>
+
+      <ul>
+      <% build.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :build_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category, id: :build_category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id, id: :build_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :build_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date, id: :build_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :done_date %>
+    <%= form.datetime_select :done_date, id: :build_done_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @build.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @build.category %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @build.user_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @build.price %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @build.start_date %>
+</p>
+
+<p>
+  <strong>Done date:</strong>
+  <%= @build.done_date %>
+</p>
+
+<%= link_to 'Edit', edit_build_path(@build) %> |
+<%= link_to 'Back', builds_path %>

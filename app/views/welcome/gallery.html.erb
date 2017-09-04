@@ -1,0 +1,132 @@
+<div id="gallery">
+	<div class="container">
+		<h1>Featured Builds</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="polaroid">
+					<%= image_tag("acoustic_side_view.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<h5>Comfort Wood OM - Higurea B & S, Sitka Spruce Top</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="polaroid">
+				<%= image_tag("kit_uke.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<h5>Tenor Uke - Mahogany</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="polaroid">
+				<%= image_tag("lapsteel.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<h5>Comfort Wood Lap Steel - Alder, Short Scale (inquire) </h5>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<h1>Repairs <span><h2><a href="http://www.mountainsongguitars.com">All repairs done at Mountain Song Guitars in Candler, NC</a></h2></span></h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="polaroid">
+					<%= image_tag("repair1.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<p>Releasing a bridge.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="polaroid">
+				<%= image_tag("repair2.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<p>Fitting a bridge.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="polaroid">
+				<%= image_tag("repair3.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<p>Discovering a loose brace.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="polaroid">
+					<%= image_tag("repair4.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<p>Repairing a harp. (Comfort Wood Guitars)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="polaroid">
+				<%= image_tag("repair5.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<p>Inlay restoration.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="polaroid">
+				<%= image_tag("repair6.jpg", class: "featured_img") %>
+					<div class="imgcontainer">
+						<p>Smushed side.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<h1>Where are Comfort Wood Guitars?</h1>
+		<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var avl = {lat: 35.5951, lng: -82.5515};
+				var chey = {lat: 41.1400, lng: -104.8202};
+				var thor = {lat: 39.8680, lng: -104.9719};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: avl
+        });
+        var marker1 = new google.maps.Marker({
+          position: avl,
+          map: map
+        });
+        var marker2 = new google.maps.Marker({
+          position: chey,
+          map: map
+        });
+        var marker3 = new google.maps.Marker({
+          position: thor,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfPSLV0DdVDnAl7zBLVtMV8H-qvu1rCZo&callback=initMap">
+    </script>
+  </body>
+</html>
+
+	</div>
+</div>
