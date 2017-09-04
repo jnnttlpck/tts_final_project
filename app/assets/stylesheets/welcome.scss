@@ -1,13 +1,27 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body.about_page {
-  background: url("IMG_20170309_181130.jpg") no-repeat center fixed;
-  background-size: cover;
+
+
+html {
+  div.about_page {
+    background: url("IMG_20170309_181130.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
-body.contact {
-  background: url("rosette_background.jpg") no-repeat center fixed;
-  background-size: cover;
+
+
+html {
+  div.contact {
+    background: url("rosette_background.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 #logo {
